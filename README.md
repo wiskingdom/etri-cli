@@ -1,6 +1,6 @@
 # etri-cli
 
-## Project setup
+## Installation
 
 ```
 npm install etri-cli -g
