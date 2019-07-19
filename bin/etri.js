@@ -48,6 +48,12 @@ program.input = path.normalize(program.input);
 
 const { code, input, output, key } = program;
 
+if (!fs.existsSync(input)) {
+  console.error(chalk.red(`no such file or directory: \'${input}\'`));
+  process.exit();  
+};
+
+
 if (!fs.existsSync(output)) {
   fs.mkdirSync(output);
 };
