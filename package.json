@@ -5,6 +5,7 @@
     "type": "git",
     "url": "https://github.com/wiskingdom/etri-cli.git"
   },
+  "homepage": "https://github.com/wiskingdom/etri-cli",
   "description": "Command line interface for using ETRI OPEN API",
   "main": "./lib/etriapi.js",
   "bin": {
