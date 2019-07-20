@@ -1,50 +1,56 @@
-# etri-cli
+# etri-cli usage guide
 
-## Install node.js and npm (prerequisite)
+## 1. Install node.js (prerequisite)
 
-### on linux
+### 1-1 On linux
 
-1. Install nvm
+#### 1) Install nvm
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 
-1. Restart terminal
+#### 2) Restart terminal
 
-2. Install node lts version
+#### 3) Install node LTS version
 
 ```bash
 nvm install --lts
 ```
 
-3. Verify installation
+#### 4) Verify installation
 
 ```bash
 node -v
 npm -v
 ```
 
-### on windows
+--------------------------
 
-1. Download LTS version installer Link: https://nodejs.org
+### 1-2 On windows
 
-2. Install via the installer
+#### 1) Download LTS version installer
 
-3. Verify installation
+* Download Link: https://nodejs.org
+
+#### 2) Install via the installer
+
+#### 3) Verify installation
 
 ```cmd
 node -v
 npm -v
 ```
+--------------------------
 
-## Install etri-cli
+## 2. Install etri-cli package
 
 ```bash
 npm install etri-cli -g
 ```
+--------------------------
 
-## Usage
+## 3. Usage
 
 ```bash
 etri [options]
@@ -52,8 +58,8 @@ etri [options]
 
 ### Options
 
-| option      | description                |
-|-----------------------------|---------------------------------------------------------------|
+| option  | description    |
+|-----------|-------------|
 | -k, --key [api_key ]        | set an auth key for ETRI OPEN API (required) 
 | -c, --code [analysis_code ] | set an analysis code (default: morp)                          |
 | -i, --input [file_path ]    | set an input text file path (required)                        |
@@ -71,7 +77,10 @@ etri [options]
 |dparse|syntactic dependency|
 |srl|semantic role|
 
-## Examples
+--------------------------
+
+## 4. Examples
+
 
 ```bash
 etri -k YOURE_API_KEY -i input/sample.txt
